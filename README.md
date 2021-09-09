@@ -1,6 +1,6 @@
 # Blockchain Telegram Bot Example
 
-You will read and write data on the blockchain methods using telegram bot.
+You will read and write data on [NEAR Blockchain] using telegram bot.
 
 Based on: 
 - [NEAR Rust Counter Example](https://examples.near.org/rust-counter)
@@ -67,5 +67,6 @@ Follow to the telegram bot you created and any method available by NEAR Rust Cou
 
 Every call will be performed on behalf of your own account `NEAR_ACCOUNT_ID` and will be visible in the [NEAR Block Explorer]
 
+[NEAR Blockchain]: https://near.org
 [NEAR Wallet]: https://wallet.testnet.near.org/
 [NEAR Block Explorer]: https://explorer.testnet.near.org/
