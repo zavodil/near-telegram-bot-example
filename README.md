@@ -22,7 +22,7 @@ Set TELEGRAM_TOKEN to your Telegram Bot Token you receive from @BotFather
 export TELEGRAM_TOKEN=1931340563:AA2G35TA_KABVSY2Y124NO6SilA4E1PT31
 ````
 
-## Deploy [NEAR Rust Counter](https://examples.near.org/rust-counter)
+## Deploy [NEAR Rust Counter]
 
 Set CONTRACT_ID to address of your NEAR Rust Counter contract
 
@@ -58,7 +58,7 @@ node app
 
 ---
 
-Follow to the telegram bot you created and any method available by NEAR Rust Counter:
+Follow to the telegram bot you created and call any methods available in [NEAR Rust Counter]:
 
 - `get_num`
 - `increment`
@@ -67,6 +67,13 @@ Follow to the telegram bot you created and any method available by NEAR Rust Cou
 
 Every call will be performed on behalf of your own account `NEAR_ACCOUNT_ID` and will be visible in the [NEAR Block Explorer]
 
+---
+
+Specify commands in the `app.js` file.
+
+Configure [NEAR Blockchain] operations in the `near.js` file. 
+
 [NEAR Blockchain]: https://near.org
 [NEAR Wallet]: https://wallet.testnet.near.org/
 [NEAR Block Explorer]: https://explorer.testnet.near.org/
+[NEAR Rust Counter]: https://examples.near.org/rust-counter
