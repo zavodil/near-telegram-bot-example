@@ -8,3 +8,4 @@ output/
 lib/
 lib-doc/
 .DS_Store
+.idea/
