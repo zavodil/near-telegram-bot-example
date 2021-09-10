@@ -50,7 +50,7 @@ module.exports = {
       if (call["status"].hasOwnProperty("SuccessValue")) {
         let logs = [];
         call["receipts_outcome"].map(receipts_outcome => {
-          if (receipts_outcome ?? ["outcome"] ?? ["logs"].length)
+          if (receipts_outcome["outcome"]["logs"].length)
             receipts_outcome["outcome"]["logs"].map(log => logs.push(log))
         });
         return `Successful operation: ${operation}!\n\r${logs.join("\n\r")}`;
