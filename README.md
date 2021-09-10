@@ -60,10 +60,12 @@ node app
 
 Follow to the telegram bot you created and call any methods available in [NEAR Rust Counter]:
 
-- `get_num`
-- `increment`
-- `decrement`
-- `reset`
+- `/get_num`
+- `/increment`
+- `/decrement`
+- `/reset`
+
+![Clip2net_210910133040](https://user-images.githubusercontent.com/38926321/132840533-dd1aac90-6261-480f-9f24-2cac2f68df1c.png)
 
 Every call will be performed on behalf of your own account `NEAR_ACCOUNT_ID` and will be visible in the [NEAR Block Explorer]
 
