@@ -11,7 +11,7 @@ const CREDENTIALS_DIR = ".near-credentials/testnet/";
 module.exports = {
   NearView: async function (contract, operation, parameters) {
     const nearRpc = new nearApi.providers.JsonRpcProvider(nearConfig.nodeUrl);
-    const account = new nearApi.Account({ provider: nearRpc });
+    const account = new nearApi.Account({provider: nearRpc});
 
     const view = await account.viewFunction(
       contract,
@@ -50,7 +50,7 @@ module.exports = {
       if (call["status"].hasOwnProperty("SuccessValue")) {
         let logs = [];
         call["receipts_outcome"].map(receipts_outcome => {
-          if (receipts_outcome ?? ["outcome"] ?? ["logs"].length)
+          if (receipts_outcome.hasOwnProperty("outcome") && receipts_outcome["outcome"].hasOwnProperty("logs"))
             receipts_outcome["outcome"]["logs"].map(log => logs.push(log))
         });
         return `Successful operation: ${operation}!\n\r${logs.join("\n\r")}`;
